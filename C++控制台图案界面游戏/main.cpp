@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+ï»¿#include <bits/stdc++.h>
 #include <windows.h>
 #include <stdio.h>
 #include <conio.h>
@@ -363,12 +363,12 @@ void Map(int a, int b)
         if (Boss == 1 || Boss == 6)
         {
             if (Bwhat1 == 5)
-                Color(5), Setpos(Bx1, By1), cout << "¨€", Color(0);
+                Color(5), Setpos(Bx1, By1), cout << "â–ˆ", Color(0);
             else if (Bwhat1 == 4 && Bgo1[1] > 6 && Bgo1[1] < 11)
-                Color(4), Setpos(Bgo1[5] - 1, Bgo1[6]), cout << "¦î", Setpos(Bgo1[5], Bgo1[6] - 1), cout << "¡¾", Setpos(Bgo1[5], Bgo1[6] + 1), cout << "¡¿", Setpos(Bgo1[5] + 1, Bgo1[6]), cout << "¦ï", Color(0);
+                Color(4), Setpos(Bgo1[5] - 1, Bgo1[6]), cout << "ï¸»", Setpos(Bgo1[5], Bgo1[6] - 1), cout << "ã€", Setpos(Bgo1[5], Bgo1[6] + 1), cout << "ã€‘", Setpos(Bgo1[5] + 1, Bgo1[6]), cout << "ï¸¼", Color(0);
             else
             {
-                Setpos(Bx1 - 1, By1 - 0.5), Color(0), cout << "¡ñ¡ñ";
+                Setpos(Bx1 - 1, By1 - 0.5), Color(0), cout << "â—â—";
                 Setpos(Bx1, By1 - 1);
                 if (Bwhat1 == 2 && Bgo1[1] <= 5)
                     Color(1);
@@ -379,10 +379,10 @@ void Map(int a, int b)
                 else
                     Color(4);
                 if (Bwhat1 == 4)
-                    Setpos(Bx1, By1 - 0.5), cout << "¨€¨€(";
+                    Setpos(Bx1, By1 - 0.5), cout << "â–ˆâ–ˆ(";
                 else
-                    cout << ")¨€¨€(";
-                Setpos(Bx1 + 1, By1 - 0.5), cout << "¡­¡­";
+                    cout << ")â–ˆâ–ˆ(";
+                Setpos(Bx1 + 1, By1 - 0.5), cout << "â€¦â€¦";
                 Color(0);
             }
         }
@@ -391,14 +391,14 @@ void Map(int a, int b)
             Setpos(Bx2 - 1, By2 - 1);
             Color(0), cout << "\\ ";
             Color(0);
-            cout << "¡ñ";
+            cout << "â—";
             Setpos(Bx2, By2 - 1);
             Color(3);
-            cout << "¨";
+            cout << "â—¥";
             Color(5), cout << "JJJ";
             Color(0), cout << ">";
             Color(3);
-            Setpos(Bx2 + 1, By2 - 1), cout << "¨¨€¨Ž";
+            Setpos(Bx2 + 1, By2 - 1), cout << "â—¢â–ˆâ—£";
             Color(0);
         }
         if (Boss == 3 || Boss == 6)
@@ -416,14 +416,14 @@ void Map(int a, int b)
                 Color(3);
             else
                 Color(2);
-            cout << "¡ñ-";
+            cout << "â—-";
             Setpos(Bx3, By3);
             if (Bwhat3 == 11)
                 cout << "/";
             else
-                cout << "©§";
+                cout << "â”ƒ";
             Color(0);
-            Setpos(Bx3 + 1, By3 - 1), cout << "¡ñ¡ñ¡ñ";
+            Setpos(Bx3 + 1, By3 - 1), cout << "â—â—â—";
         }
         if (X < 0)
             return;
@@ -460,72 +460,72 @@ void Map(int a, int b)
         if (X >= 17 && X <= 19)
         {
             Setpos(X - 1, Y);
-            cout << "¡ñ";
+            cout << "â—";
             Setpos(X, Y - 1);
-            cout << "©¥/";
+            cout << "â”/";
             if (T % 10 < 3)
-                Setpos(X + 1, Y - 1), cout << "©¿¨v";
+                Setpos(X + 1, Y - 1), cout << "â”›â•²";
             else if (T % 10 < 6)
-                Setpos(X + 1, Y - 1), cout << "©Ê ";
+                Setpos(X + 1, Y - 1), cout << "â”¦ ";
             else
-                Setpos(X + 1, Y - 1), cout << "¨s>";
+                Setpos(X + 1, Y - 1), cout << "â•¯>";
             if (Wind > 0 && T % 3 == 0)
-                Setpos(X + 1, Y - 1), cout << "©¿¨v";
+                Setpos(X + 1, Y - 1), cout << "â”›â•²";
             else if (Wind > 0 && T % 3 == 1)
-                Setpos(X + 1, Y - 1), cout << "©Ê ";
+                Setpos(X + 1, Y - 1), cout << "â”¦ ";
             else if (Wind > 0 && T % 3 == 2)
-                Setpos(X + 1, Y - 1), cout << "¨s>";
+                Setpos(X + 1, Y - 1), cout << "â•¯>";
         }
         else if (X <= 23 && X >= 21)
         {
             Setpos(X + 1, Y);
-            cout << "¡ñ";
+            cout << "â—";
             Setpos(X, Y - 1);
-            cout << "©¥\\";
+            cout << "â”\\";
             if (T % 10 < 3)
-                Setpos(X - 1, Y - 1), cout << "©·¨u";
+                Setpos(X - 1, Y - 1), cout << "â”“â•±";
             else if (T % 10 < 6)
-                Setpos(X - 1, Y - 1), cout << "©Î ";
+                Setpos(X - 1, Y - 1), cout << "â”ª ";
             else
-                Setpos(X - 1, Y - 1), cout << "¨r>";
+                Setpos(X - 1, Y - 1), cout << "â•®>";
             if (Wind > 0 && T % 3 == 0)
-                Setpos(X - 1, Y - 1), cout << "©·¨u";
+                Setpos(X - 1, Y - 1), cout << "â”“â•±";
             else if (Wind > 0 && T % 3 == 1)
-                Setpos(X - 1, Y - 1), cout << "©Î ";
+                Setpos(X - 1, Y - 1), cout << "â”ª ";
             else if (Wind > 0 && T % 3 == 2)
-                Setpos(X - 1, Y - 1), cout << "¨r>";
+                Setpos(X - 1, Y - 1), cout << "â•®>";
         }
         else if (X > 23)
         {
             Setpos(X, Y - 1);
-            cout << "©¥ ¡ñ";
-            Setpos(X - 1, Y - 0.5), cout << "©¦>";
+            cout << "â” â—";
+            Setpos(X - 1, Y - 0.5), cout << "â”‚>";
         }
         else if (X < 17 && Upt != 0)
         {
             Setpos(X, Y - 1);
-            cout << "©¥ ¡ñ";
-            Setpos(X + 1, Y - 1.5), cout << "¨u >";
+            cout << "â” â—";
+            Setpos(X + 1, Y - 1.5), cout << "â•± >";
         }
         else if (X < 17)
         {
             Setpos(X, Y - 1);
-            cout << "©¥ ¡ñ";
-            Setpos(X + 1, Y - 0.5), cout << "©¦>";
+            cout << "â” â—";
+            Setpos(X + 1, Y - 0.5), cout << "â”‚>";
         }
         if (Thun > 0)
         {
-            Setpos(X - 2, Y - 1), cout << "¨{¨{";
-            Setpos(X + 2, Y - 1), cout << "¨{¨{";
-            Setpos(X, Y + 2), cout << "¨„";
-            Setpos(X, Y - 2.5), cout << "¨„";
-            Setpos(X - 1, Y + 1), cout << "¨€";
-            Setpos(X + 1, Y + 1), cout << "¨€";
-            Setpos(X - 1, Y - 2), cout << "¨€";
-            Setpos(X + 1, Y - 2), cout << "¨€";
+            Setpos(X - 2, Y - 1), cout << "â–„â–„";
+            Setpos(X + 2, Y - 1), cout << "â–„â–„";
+            Setpos(X, Y + 2), cout << "â–Œ";
+            Setpos(X, Y - 2.5), cout << "â–Œ";
+            Setpos(X - 1, Y + 1), cout << "â–ˆ";
+            Setpos(X + 1, Y + 1), cout << "â–ˆ";
+            Setpos(X - 1, Y - 2), cout << "â–ˆ";
+            Setpos(X + 1, Y - 2), cout << "â–ˆ";
         }
         if (Magne > 0 && T % 7 < 2)
-            Setpos(X, Y), Color(5), cout << "¡ï";
+            Setpos(X, Y), Color(5), cout << "â˜…";
         if (Wind > 1)
         {
             if (T % 6 < 2)
@@ -575,33 +575,33 @@ void Map(int a, int b)
             if (T % 20 < 5)
             {
                 Setpos(X + 2, Y - 3);
-                cout << "¡ö";
+                cout << "â– ";
                 Setpos(X + 1, Y - 3.5);
-                cout << "¡ö";
+                cout << "â– ";
                 Setpos(X - 1, Y - 2.5);
-                cout << "¡ö";
+                cout << "â– ";
                 Setpos(X - 2, Y - 3);
-                cout << "¡ö";
+                cout << "â– ";
             }
             else if (T % 20 < 10 || T % 20 >= 15)
             {
                 Setpos(X + 2, Y - 3);
-                cout << "¡ö";
+                cout << "â– ";
                 Setpos(X, Y - 4);
-                cout << "¡ö¡ö";
+                cout << "â– â– ";
                 Setpos(X - 2, Y - 3);
-                cout << "¡ö";
+                cout << "â– ";
             }
             else if (T % 20 < 15)
             {
                 Setpos(X + 2, Y - 3.5);
-                cout << "¡ö";
+                cout << "â– ";
                 Setpos(X + 1, Y - 3);
-                cout << "¡ö";
+                cout << "â– ";
                 Setpos(X - 1, Y - 3.5);
-                cout << "¡ö";
+                cout << "â– ";
                 Setpos(X - 2, Y - 3);
-                cout << "¡ö";
+                cout << "â– ";
             }
         }
         if (Fire != 0)
@@ -611,11 +611,11 @@ void Map(int a, int b)
             else
                 Color(5);
             if (Fir >= 1)
-                Setpos(X, Y + 1), cout << "¡ñ";
+                Setpos(X, Y + 1), cout << "â—";
             if (Fir >= 2)
-                Setpos(X + 1, Y), cout << "¡ñ";
+                Setpos(X + 1, Y), cout << "â—";
             if (Fir >= 3)
-                Setpos(X - 1, Y - 1), cout << "¡ñ";
+                Setpos(X - 1, Y - 1), cout << "â—";
         }
     }
     if (a == 1 || a == 3)
@@ -636,7 +636,7 @@ void Map(int a, int b)
                     Color(13);
                 else
                     Color(4);
-                cout << "¡ñ";
+                cout << "â—";
                 if (a == 1)
                     Pan(1, B[b].x, B[b].y, b);
             }
@@ -666,15 +666,15 @@ void Map(int a, int b)
                 Color(5);
                 if (B[b].How == 0)
                 {
-                    Setpos(B[b].x - 1, B[b].y), cout << "¡ü";
-                    Setpos(B[b].x, B[b].y - 1), cout << "¡û©à ¡ú";
-                    Setpos(B[b].x + 1, B[b].y), cout << "¡ý";
+                    Setpos(B[b].x - 1, B[b].y), cout << "â†‘";
+                    Setpos(B[b].x, B[b].y - 1), cout << "â†â”¼ â†’";
+                    Setpos(B[b].x + 1, B[b].y), cout << "â†“";
                 }
                 else if (B[b].How == 1)
                 {
-                    Setpos(B[b].x - 1, B[b].y - 1), cout << "¨I  ¨J";
-                    Setpos(B[b].x, B[b].y), cout << "¨w";
-                    Setpos(B[b].x + 1, B[b].y - 1), cout << "¨L  ¨K";
+                    Setpos(B[b].x - 1, B[b].y - 1), cout << "â†–  â†—";
+                    Setpos(B[b].x, B[b].y), cout << "â•³";
+                    Setpos(B[b].x + 1, B[b].y - 1), cout << "â†™  â†˜";
                 }
                 if (a == 1)
                     Pan(2, B[b].x, B[b].y, b);
@@ -697,7 +697,7 @@ void Map(int a, int b)
                     Color(5);
                 else
                     Color(4);
-                cout << "¡ò";
+                cout << "â—Ž";
             }
         }
         if (B[b].what == 4)
@@ -720,7 +720,7 @@ void Map(int a, int b)
                 Setpos(B[b].x, fmax((float)0, B[b].y - 8));
                 Color(6);
                 for (int i = max(0, (int)B[b].y - 8); i <= B[b].y; i++)
-                    cout << "¨T";
+                    cout << "â•";
                 if (a == 1)
                     Pan(4, B[b].x, B[b].y, b);
             }
@@ -765,14 +765,14 @@ void Map(int a, int b)
                 if (B[b].what == 8)
                     Color(5);
                 Setpos(B[b].x - 1, B[b].y);
-                cout << "¦â";
+                cout << "ï¸¹";
                 Setpos(B[b].x + 1, B[b].y);
-                cout << "¦ã";
+                cout << "ï¸º";
                 Setpos(B[b].x, B[b].y - 1);
                 if (B[b].How % 2 == 1)
-                    cout << "¡²¡ñ¡³";
+                    cout << "ã€”â—ã€•";
                 else
-                    cout << "©z¡ð©{";
+                    cout << "ï¹â—‹ï¹ž";
                 if (a == 1)
                     Pan(6, B[b].x, B[b].y, b);
             }
@@ -800,7 +800,7 @@ void Map(int a, int b)
                     for (int i = 19; i >= 20 + B[b].How; i--)
                     {
                         Setpos(i, B[b].y);
-                        cout << "¨U";
+                        cout << "â•‘";
                         if (a == 1)
                             Pan(7, i, B[b].y, b);
                     }
@@ -808,7 +808,7 @@ void Map(int a, int b)
                     for (int i = 21; i <= 20 + B[b].How; i++)
                     {
                         Setpos(i, B[b].y);
-                        cout << "¨U";
+                        cout << "â•‘";
                         if (a == 1)
                             Pan(7, i, B[b].y, b);
                     }
@@ -846,9 +846,9 @@ void Map(int a, int b)
                 else
                     Color(0);
                 if (B[b].t % 4 < 2)
-                    cout << "¨z";
+                    cout << "â–ƒ";
                 else
-                    cout << "¨…";
+                    cout << "â–";
                 if (a == 1)
                     Pan(B[b].what, B[b].x, B[b].y, b);
             }
@@ -876,7 +876,7 @@ void Map(int a, int b)
                     Color(3);
                 else
                     Color(2);
-                cout << "¡ñ";
+                cout << "â—";
                 if (B[b].what == 14)
                     cout << "*";
                 if (B[b].what == 15)
@@ -910,91 +910,91 @@ void Map(int a, int b)
                 Setpos(B[b].x, B[b].y);
                 Color(5);
                 if (B[b].what == 99)
-                    cout << "¨€";
+                    cout << "â–ˆ";
                 if (B[b].what >= 100 && B[b].what < 200)
                 {
                     if (B[b].what % 5 == 0)
-                        cout << "ÎÒ";
+                        cout << "æˆ‘";
                     if (B[b].what % 5 == 1)
-                        cout << "ÊÇ";
+                        cout << "æ˜¯";
                     if (B[b].what % 5 == 2)
-                        cout << "×î";
+                        cout << "æœ€";
                     if (B[b].what % 5 == 3)
-                        cout << "Ç¿";
+                        cout << "å¼º";
                     if (B[b].what % 5 == 4)
-                        cout << "µÄ";
+                        cout << "çš„";
                 }
                 if (B[b].what >= 200 && B[b].what < 300)
                 {
                     if (B[b].what % 6 == 0)
-                        cout << "Éñ";
+                        cout << "ç¥ž";
                     if (B[b].what % 6 == 1)
-                        cout << "¼¶";
+                        cout << "çº§";
                     if (B[b].what % 6 == 2)
-                        cout << "¹Ö";
+                        cout << "æ€ª";
                     if (B[b].what % 6 == 3)
-                        cout << "Îï";
+                        cout << "ç‰©";
                     if (B[b].what % 6 == 4)
-                        cout << "Ö®";
+                        cout << "ä¹‹";
                     if (B[b].what % 6 == 5)
-                        cout << "¹â";
+                        cout << "å…‰";
                 }
                 if (B[b].what >= 300 && B[b].what < 400)
                 {
                     if (B[b].what % 8 == 0)
-                        cout << "²ü";
+                        cout << "é¢¤";
                     if (B[b].what % 8 == 1)
-                        cout << "¶¶";
+                        cout << "æŠ–";
                     if (B[b].what % 8 == 2)
-                        cout << "°É";
+                        cout << "å§";
                     if (B[b].what % 8 == 3)
-                        cout << "ÎÞ";
+                        cout << "æ— ";
                     if (B[b].what % 8 == 4)
-                        cout << "ÄÜ";
+                        cout << "èƒ½";
                     if (B[b].what % 8 == 5)
-                        cout << "µÄ";
+                        cout << "çš„";
                     if (B[b].what % 8 == 6)
-                        cout << "ÈË";
+                        cout << "äºº";
                     if (B[b].what % 8 == 7)
-                        cout << "Àà";
+                        cout << "ç±»";
                 }
                 if (B[b].what >= 400 && B[b].what < 500)
                 {
                     if (B[b].what % 8 == 0)
-                        cout << "»¹";
+                        cout << "è¿˜";
                     if (B[b].what % 8 == 1)
-                        cout << "²»";
+                        cout << "ä¸";
                     if (B[b].what % 8 == 2)
-                        cout << "¿ì";
+                        cout << "å¿«";
                     if (B[b].what % 8 == 3)
-                        cout << "¹ò";
+                        cout << "è·ª";
                     if (B[b].what % 8 == 4)
-                        cout << "µ¹";
+                        cout << "å€’";
                     if (B[b].what % 8 == 5)
-                        cout << "ÔÚ";
+                        cout << "åœ¨";
                     if (B[b].what % 8 == 6)
-                        cout << "ëÞ";
+                        cout << "æœ•";
                     if (B[b].what % 8 == 7)
-                        cout << "Ç°";
+                        cout << "å‰";
                 }
                 if (B[b].what >= 500 && B[b].what < 600)
                 {
                     if (B[b].what % 8 == 0)
-                        cout << "¿´";
+                        cout << "çœ‹";
                     if (B[b].what % 8 == 1)
-                        cout << "¶®";
+                        cout << "æ‡‚";
                     if (B[b].what % 8 == 2)
-                        cout << "Õâ";
+                        cout << "è¿™";
                     if (B[b].what % 8 == 3)
-                        cout << "¾ä";
+                        cout << "å¥";
                     if (B[b].what % 8 == 4)
-                        cout << "»°";
+                        cout << "è¯";
                     if (B[b].what % 8 == 5)
-                        cout << "µÄ";
+                        cout << "çš„";
                     if (B[b].what % 8 == 6)
-                        cout << "ÊÇ";
+                        cout << "æ˜¯";
                     if (B[b].what % 8 == 7)
-                        cout << "Öí";
+                        cout << "çŒª";
                 }
                 if (a == 1)
                     Pan(1, B[b].x, B[b].y, b);
@@ -1023,9 +1023,9 @@ void Map(int a, int b)
                 Setpos(B[b].x, B[b].y);
                 Color(7);
                 if (B[b].t % 2 == 0)
-                    cout << "£«";
+                    cout << "ï¼‹";
                 else
-                    cout << "¡Á";
+                    cout << "Ã—";
             }
         }
         if (B[b].what <= -2 && B[b].what >= -9)
@@ -1086,26 +1086,26 @@ void Map(int a, int b)
                 else if (T % 7 <= 1)
                     Color(0);
                 Setpos(B[b].x - 1, B[b].y);
-                cout << "¦â";
+                cout << "ï¸¹";
                 Setpos(B[b].x + 1, B[b].y);
-                cout << "¦ã";
+                cout << "ï¸º";
                 Setpos(B[b].x, B[b].y - 1);
                 if (B[b].what == -2)
-                    cout << "©zïÚ©{";
+                    cout << "ï¹é•–ï¹ž";
                 if (B[b].what == -3)
-                    cout << "©z»ð©{";
+                    cout << "ï¹ç«ï¹ž";
                 if (B[b].what == -4)
-                    cout << "©zË®©{";
+                    cout << "ï¹æ°´ï¹ž";
                 if (B[b].what == -5)
-                    cout << "©z·ç©{";
+                    cout << "ï¹é£Žï¹ž";
                 if (B[b].what == -6)
-                    cout << "©zÀ×©{";
+                    cout << "ï¹é›·ï¹ž";
                 if (B[b].what == -7)
-                    cout << "©z´Å©{";
+                    cout << "ï¹ç£ï¹ž";
                 if (B[b].what == -8)
-                    cout << "©zÑª©{";
+                    cout << "ï¹è¡€ï¹ž";
                 if (B[b].what == -9)
-                    cout << "©zÈÌ©{";
+                    cout << "ï¹å¿ï¹ž";
                 if (a == 1)
                     Pan(-2, B[b].x, B[b].y, b);
             }
@@ -1130,7 +1130,7 @@ void Map(int a, int b)
                     Color(7);
                 if (T % 7 <= 1)
                     Color(0);
-                cout << "¡ô";
+                cout << "â—†";
                 if (a == 1)
                     Pan(-1, B[b].x, B[b].y, b);
             }
@@ -1177,7 +1177,7 @@ void Map(int a, int b)
                     Color(5);
                 else
                     Color(4);
-                cout << "¡ñ";
+                cout << "â—";
             }
         }
     }
@@ -1739,7 +1739,7 @@ void RandGood()
         if (I[i][0] >= 28 || I[i][0] <= 0 || I[i][1] >= 29)
             I[i][0] = I[i][1] = -1;
         else
-            Color(1), Setpos(I[i][0], I[i][1]), cout << "¡ö";
+            Color(1), Setpos(I[i][0], I[i][1]), cout << "â– ";
         Color(0);
     }
 }
@@ -1797,7 +1797,7 @@ void Boss1()
         {
             bx = Bx1 - i * Bvx1 / 10.0;
             by = By1 - i * Bvy1 / 10.0;
-            Setpos(bx, by), cout << "¨€";
+            Setpos(bx, by), cout << "â–ˆ";
             Bbl++;
             Bway[Bbl][0] = bx;
             Bway[Bbl][1] = by;
@@ -1921,7 +1921,7 @@ void Boss1()
             if (r < 2)
                 cout << ") ";
             else
-                cout << "¡¿";
+                cout << "ã€‘";
             Color(0);
         }
         if (Bgo1[1] == 6)
@@ -1943,7 +1943,7 @@ void Boss1()
                 if (bx <= 5 || bx >= 30 || by < 0 || by >= 29)
                     break;
                 Panboss(bx, by);
-                Setpos(bx, by), cout << "¨€";
+                Setpos(bx, by), cout << "â–ˆ";
                 Bbl++;
                 Bway[Bbl][0] = bx;
                 Bway[Bbl][1] = by;
@@ -2100,9 +2100,9 @@ void Boss2()
                 else
                     Color(10);
                 if (r <= 1)
-                    cout << "¡Á";
+                    cout << "Ã—";
                 else
-                    cout << "£«";
+                    cout << "ï¼‹";
                 Color(0);
             }
         }
@@ -2129,7 +2129,7 @@ void Boss2()
                             continue;
                         }
                         Panboss(bx, by);
-                        Setpos(bx, by), cout << "¨€";
+                        Setpos(bx, by), cout << "â–ˆ";
                         Bbl++;
                         Bway[Bbl][0] = bx;
                         Bway[Bbl][1] = by;
@@ -2155,7 +2155,7 @@ void Boss2()
             else
                 Color(5);
             if (Bgo2[3] == 0)
-                Setpos(X - 3, Y), cout << "¨‹", Setpos(X + 3, Y), cout << "¡ø", Bgo2[4] = (int)(X + 0.5), Bgo2[5] = (int)(Y + 0.5);
+                Setpos(X - 3, Y), cout << "â–¼", Setpos(X + 3, Y), cout << "â–²", Bgo2[4] = (int)(X + 0.5), Bgo2[5] = (int)(Y + 0.5);
             if (Bgo2[3] == 1)
                 Setpos(X, Y - 3), cout << " ", Setpos(X, Y + 3), cout << " ", Bgo2[4] = (int)(X + 0.5), Bgo2[5] = (int)(Y + 0.5);
             Color(0);
@@ -2179,7 +2179,7 @@ void Boss2()
             else
                 Color(5);
             if (Bgo2[3] == 0)
-                Setpos(Bgo2[4] - 3, Bgo2[5]), cout << "¨‹", Setpos(Bgo2[4] + 3, Bgo2[5]), cout << "¡ø";
+                Setpos(Bgo2[4] - 3, Bgo2[5]), cout << "â–¼", Setpos(Bgo2[4] + 3, Bgo2[5]), cout << "â–²";
             if (Bgo2[3] == 1)
                 Setpos(Bgo2[4], Bgo2[5] - 3), cout << " ", Setpos(Bgo2[4], Bgo2[5] + 3), cout << " ";
             Color(0);
@@ -2191,7 +2191,7 @@ void Boss2()
                 Color(3);
                 for (int i = 4; i <= 29; i++)
                 {
-                    Setpos(i, Bgo2[5]), cout << "¨€";
+                    Setpos(i, Bgo2[5]), cout << "â–ˆ";
                     Bbl++;
                     Panboss(i, Bgo2[5]);
                     Bway[Bbl][0] = i;
@@ -2203,7 +2203,7 @@ void Boss2()
                 Color(3);
                 for (int i = 0; i <= 28; i++)
                 {
-                    Setpos(Bgo2[4], i), cout << "¨€";
+                    Setpos(Bgo2[4], i), cout << "â–ˆ";
                     Bbl++;
                     Panboss(Bgo2[4], i);
                     Bway[Bbl][0] = Bgo2[4];
@@ -2553,34 +2553,34 @@ void Ball(int ball)
         system("cls");
         Color(5);
         Setpos(10, 10);
-        cout << "ÐÂÌì¸³£¡";
+        cout << "æ–°å¤©èµ‹ï¼";
     Y:
         int rr = rand() % 4 + 2;
         Setpos(12, 10);
         if (rr == Ren)
             goto Y;
         if (rr == 2)
-            cout << "Ë²Ìø";
+            cout << "çž¬è·³";
         if (rr == 3)
-            cout << "¿ÕÖ®Îè";
+            cout << "ç©ºä¹‹èˆž";
         if (rr == 4)
-            cout << "Èý¶ÎÌø";
+            cout << "ä¸‰æ®µè·³";
         if (rr == 5)
-            cout << "·´ÖØÁ¦ÌøÔ¾";
+            cout << "åé‡åŠ›è·³è·ƒ";
         Setpos(14, 10);
-        cout << "µ±Ç°Ìì¸³£º";
+        cout << "å½“å‰å¤©èµ‹ï¼š";
         if (Ren == 1)
-            cout << "Ð¡ÎÞµÐ";
+            cout << "å°æ— æ•Œ";
         if (Ren == 2)
-            cout << "Ë²Ìø";
+            cout << "çž¬è·³";
         if (Ren == 3)
-            cout << "¿ÕÖ®Îè";
+            cout << "ç©ºä¹‹èˆž";
         if (Ren == 4)
-            cout << "Èý¶ÎÌø";
+            cout << "ä¸‰æ®µè·³";
         if (Ren == 5)
-            cout << "·´ÖØÁ¦ÌøÔ¾";
+            cout << "åé‡åŠ›è·³è·ƒ";
         Setpos(16, 10);
-        cout << "»»·ñ£¿£¨y/n£©";
+        cout << "æ¢å¦ï¼Ÿï¼ˆy/nï¼‰";
     G:
         char g = _getch();
         if (g == 'y')
@@ -2597,7 +2597,7 @@ void Ball(int ball)
     {
         Color(4);
         for (float i = 1; i <= Bblo; i += Bblomax / 20.0)
-            cout << "¨{";
+            cout << "â–„";
         Color(0);
         cout << ' ' << Bblo << "                              ";
         Color(0);
@@ -2608,7 +2608,7 @@ void Ball(int ball)
         if (Win == 7 && T % 6 < 3)
             Color(3);
         for (float i = 1; i <= Blo; i += Blomax / 20.0)
-            cout << "¨{";
+            cout << "â–„";
         Color(0);
         if (Win == 7 && T % 6 < 3)
             Color(3);
@@ -2819,13 +2819,13 @@ Start:
             if (Win == 0 && T < 300)
             {
                 Setpos(4, 6);
-                cout << "¡ü/¡ý ÌøÔ¾/ÏÂ·­£¬¡û¡ú Ð©Î¢ÒÆ¶¯£¨ËÉÊÖ¼´·µ»Ø£©";
+                cout << "â†‘/â†“ è·³è·ƒ/ä¸‹ç¿»ï¼Œâ†â†’ äº›å¾®ç§»åŠ¨ï¼ˆæ¾æ‰‹å³è¿”å›žï¼‰";
                 Setpos(8, 6);
-                cout << "Çò¿ÉÒÔ¿ªÆôÌØÊâÐ§¹û£¬¾­Ñé»ýÂú£¨300£©¿ÉÌáÉý¼¶±ð¡£";
+                cout << "çƒå¯ä»¥å¼€å¯ç‰¹æ®Šæ•ˆæžœï¼Œç»éªŒç§¯æ»¡ï¼ˆ300ï¼‰å¯æå‡çº§åˆ«ã€‚";
                 Setpos(8, 6);
-                cout << "´ò°Ü 7 ²¨¼´Ê¤Àû£¬´ò°Ü BOSS ÓÐÐÂÌì¸³¡£";
+                cout << "æ‰“è´¥ 7 æ³¢å³èƒœåˆ©ï¼Œæ‰“è´¥ BOSS æœ‰æ–°å¤©èµ‹ã€‚";
                 Setpos(10, 15);
-                cout << "¿Õ¸ñ¿ÉÒÔÔÝÍ£¡£";
+                cout << "ç©ºæ ¼å¯ä»¥æš‚åœã€‚";
             }
         }
         Map(-1, 0);
@@ -2843,25 +2843,25 @@ Start:
         Setpos(1, 1);
         Blo = fmin(Blo, (float)Blomax);
         if (Boss == 0)
-            cout << "ÑªÁ¿: " << (int)Blo << "  ";
+            cout << "è¡€é‡: " << (int)Blo << "  ";
         Color(0);
-        Setpos(1, 9), cout << "ËÀÍö´ÎÊý: " << D << "  ";
+        Setpos(1, 9), cout << "æ­»äº¡æ¬¡æ•°: " << D << "  ";
         Setpos(2, 1);
         Exp = min(Exp, Expmax);
         if (Exp >= Expmax)
             Exp = 0, Lv++, Lvl++, Hui++, Blomax += 5;
         if (Lvl > 0)
             Color(5);
-        cout << "¼¶±ð: " << Lv;
+        cout << "çº§åˆ«: " << Lv;
         Color(0);
         Setpos(2, 9);
-        cout << "¾­Ñé: " << Exp << "  ";
+        cout << "ç»éªŒ: " << Exp << "  ";
         if (Boss > 0)
-            Setpos(3, 1), cout << "ÑªÁ¿     : ", Ball(7);
+            Setpos(3, 1), cout << "è¡€é‡     : ", Ball(7);
         if (Boss > 0 && Boss != 6)
-            Setpos(4, 1), cout << "¹ÖÎïÑªÁ¿: ", Ball(6);
+            Setpos(4, 1), cout << "æ€ªç‰©è¡€é‡: ", Ball(6);
         if (Boss == 6)
-            Setpos(1, 9), printf("Ê±¼ä: %0.1f s  ", T / 15.0);
+            Setpos(1, 9), printf("æ—¶é—´: %0.1f s  ", T / 15.0);
         if (Win == 0)
             Sleep(55);
         if (Win == 1)
@@ -2921,7 +2921,7 @@ Start:
         system("color 7F");
         Setpos(15, 11);
         Color(4);
-        cout << "¼á³Ö30Ãë !";
+        cout << "åšæŒ30ç§’ !";
         Sleep(2000);
         Setpos(30, 0);
         Win++;
