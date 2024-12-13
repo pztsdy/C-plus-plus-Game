@@ -13,6 +13,12 @@
 如果您有宝贵意见，欢迎邮箱至piaoztsdy_@outlook.com，如有问题我将立刻改正。
 **注意**：邮箱非诚勿扰，请在邮箱*开头*备注 " 来自GITHUB开源项目C-Plus-Plus-Game 的反馈 "，否则一律当作垃圾邮件处理。
 
+<<<<<<< Updated upstream
+=======
+- 网站
+欢迎您访问我们的(官方网站)[http://www.piaoztsdy.cn]，这是对我们一个很好的支持！
+
+>>>>>>> Stashed changes
 ---
 
 来自pztsdy
