@@ -6,8 +6,8 @@ int main(){
     char choise; scanf("%c", &choise);
     switch(choise){
         case 'a':
-            system("g++.exe ./sorce/gm.cpp -o ./sorce/gm.exe");
-            system("start ./sorce/gm.exe");
+            system("g++.exe ./source/gm.cpp -o ./source/gm.exe");
+            system("start ./source/gm.exe");
             break;
         case 'b':
             printf("ERROR!");
