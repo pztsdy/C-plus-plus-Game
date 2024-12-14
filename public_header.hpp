@@ -8,6 +8,14 @@
 #include <chrono>
 #include <ios>
 
+/*
+
+	HANDLE handle;
+	handle = GetStdHandle(STD_OUTPUT_HANDLE);
+
+    SetConsoleTextAttribute(handle, BG_RED | ...);
+*/
+
 #define THE_MAX 21000000
 #define TEXT_RED 4
 #define TEXT_GREEN 2
