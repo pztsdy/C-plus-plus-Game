@@ -37,3 +37,7 @@
 *.temp
 *.log
 *.in
+
+# Some other
+*py.b*
+*dw.b*
