@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+*.apk
+
+# Temp file
+*.tmp
+*.temp
+*.log
+*.in
