@@ -5,7 +5,7 @@
 #include <iomanip>
 #include <Windows.h>
 #include <vector>
-#include <chrono>
+#include <winnt.h>
 #include <ios>
 
 /*
@@ -27,5 +27,29 @@
 #define BG_LIGHT 128
 
 #ifdef _WINDOWS_
-#define __WIN_DOC__ 16384
+#define __winsystem__ true
 #endif
+
+#ifndef _WINDOWS_
+#define __winsystem__ false
+#endif
+
+void cls(){
+	if(__winsystem__){
+		system("cls");
+	}else{
+		system("clear");
+	}
+
+	return ;
+}
+
+void clearcolor(HANDLE handle, bool ifCLS){
+	SetConsoleTextAttribute(handle, TEXT_RED | TEXT_BLUE | TEXT_GREEN);
+	system("color 07");
+	if(ifCLS){
+		cls();
+	}
+	
+	return ;
+}
