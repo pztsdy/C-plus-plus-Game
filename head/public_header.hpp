@@ -38,7 +38,7 @@
 #endif
 
 #ifndef __INC_HEADER_
-#define __INC_HEADER_
+#define __INC_HEADER_ \0
 #define RETURN_CHANGES_Inc 0x2418b9cc
 #endif
 
