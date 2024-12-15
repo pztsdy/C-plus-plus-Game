@@ -1,3 +1,4 @@
+CHINESE
 # 这是一个C++游戏项目
 ## 欢迎其他开发者参与我们的项目
 
@@ -18,3 +19,22 @@
 
 来自pztsdy
 本readme.md以后会逐渐补充完整。
+
+ENGLISH
+
+# This is a C++-game project
+## Welcome other developers to participate in our project
+# Warning： be careful!
+The encoding of some of the code in this project is **GBK**, but it has been converted to UTF-8 encoding. When compiling in IDE/compiler, there may be some errors or compilation issues during runtime. If there are any problems, please convert to GBK encoding for operation.
+---
+- Explain that
+This C++game project is privately developed, please understand if there are any technical issues. We plan to develop two games in this game project, both running on the Windows platform and **not compatible** with Linux
+
+- Open source
+This C++game project is open source, and we welcome developers to clone our project!
+
+- Web page
+Welcome to our official website, it is a great support for us!
+
+From pztsdy.
+this readme.md will gradually be supplemented in its entirety.
