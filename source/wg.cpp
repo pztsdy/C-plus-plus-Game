@@ -1,10 +1,5 @@
-#include <bits/stdc++.h>
-#include <windows.h>
-#include <stdlib.h>
 #include <string.h>
-#include <fstream>
-#include <stdlib.h>
-#include "public_header.hpp"
+#include "../head/public_header.hpp"
 using namespace std;
 
 string username, usernametxt;
@@ -132,7 +127,7 @@ int main()
     HANDLE handle;
     handle = GetStdHandle(STD_OUTPUT_HANDLE);
     system("title 伍月计划^ ^-^ The^ MayMoon^ Plan");
-    MessageBox(NULL, "请不要使用中文或者字母、符号输入（输入名字时除外），否则将会导致游戏崩溃！", "警告", MB_ICONWARNING | MB_OK); //C++ 11+
+    MessageBox(NULL, TEXT("请不要使用中文或者字母、符号输入（输入名字时除外），否则将会导致游戏崩溃！"), TEXT("警告"), MB_ICONWARNING | MB_OK); //C++ 11+
     cout << "伍月计划 - The MayMoon Plan.";
     Icon(1);
     cout << "\n";

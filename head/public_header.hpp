@@ -8,6 +8,7 @@
 #include <vector>
 #include <winnt.h>
 #include <ios>
+#include <fstream>
 
 /*
 
