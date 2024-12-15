@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <time.h>
+// #include "../head/public_header.hpp"
 #define Nor         \
     if (B[b].x < 5) \
         B[b].x = 5;

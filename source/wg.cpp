@@ -2,6 +2,8 @@
 #include "../head/public_header.hpp"
 using namespace std;
 
+HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+
 string username, usernametxt;
 int coin, people, jd;
 bool isNew;
@@ -63,6 +65,9 @@ void problem(int xz)
         else
         {
             cout << "保存失败！";
+            SetConsoleTextAttribute(handle, TEXT_LIGHT | TEXT_RED);
+            cerr << "Save faild!";
+            colorclear(handle);
             problem(menu());
         }
         return;
@@ -114,7 +119,7 @@ void Icon(int iconid)
         cout << "   UPGRADE! 升级！\n";
         cout << "   ______________ \n";
         cout << "  |    恭喜你    |     升级后\n";
-        cout << "  |———————| 你将到达下一个\n";
+        cout << "  |——————————————| 你将到达下一个\n";
         cout << "  |  你成功升级  |     进度，\n";
         cout << "  | ..''''''''.. |   祝你好运！\n";
         cout << "  |______________| 伍月计划 - TMMP\n";
@@ -124,10 +129,8 @@ void Icon(int iconid)
 
 int main()
 {
-    HANDLE handle;
-    handle = GetStdHandle(STD_OUTPUT_HANDLE);
     system("title 伍月计划^ ^-^ The^ MayMoon^ Plan");
-    MessageBox(NULL, TEXT("请不要使用中文或者字母、符号输入（输入名字时除外），否则将会导致游戏崩溃！"), TEXT("警告"), MB_ICONWARNING | MB_OK); //C++ 11+
+    MessageBox(NULL, TEXT("请不要使用中文或者字母、符号输入（输入名字时除外），否则将会导致游戏崩溃！"), TEXT("警告"), MB_ICONWARNING | MB_OK); // C++ 11+
     cout << "伍月计划 - The MayMoon Plan.";
     Icon(1);
     cout << "\n";
@@ -182,7 +185,7 @@ int main()
         pause();
         cout << "伍月计划 - The MayMoon Plan\n\n\n\n";
         pause();
-        clearcolor(handle, true);
+        clearcolor(handle, true, true);
         cls();
     }
     // 伍月
