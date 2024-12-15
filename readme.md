@@ -1,4 +1,4 @@
-CHINESE
+中文
 # 这是一个C++游戏项目
 ## 欢迎其他开发者参与我们的项目
 
@@ -20,6 +20,9 @@ CHINESE
 来自pztsdy
 本readme.md以后会逐渐补充完整。
 
+---
+---
+---
 ENGLISH
 
 # This is a C++-game project
@@ -34,7 +37,7 @@ This C++game project is privately developed, please understand if there are any 
 This C++game project is open source, and we welcome developers to clone our project!
 
 - Web page
-Welcome to our official website, it is a great support for us!
+Welcome to our [official website](http://www.piaoztsdy.cn), it is a great support for us!
 
 From pztsdy.
 this readme.md will gradually be supplemented in its entirety.
