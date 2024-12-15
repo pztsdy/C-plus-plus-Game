@@ -42,8 +42,6 @@
 #define RETURN_CHANGES_Inc 0x2418b9cc
 #endif
 
-
-
 void pause()
 {
 	system("pause");
@@ -65,14 +63,24 @@ void cls()
 	return;
 }
 
-void clearcolor(HANDLE handle, bool ifCLS)
+void clearcolor(HANDLE handle, bool isUseDosMode, bool isUseDosCommandCls)
 {
 	SetConsoleTextAttribute(handle, TEXT_RED | TEXT_BLUE | TEXT_GREEN);
-	system("color 07");
-	if (ifCLS)
+	if (isUseDosMode)
+	{
+		system("color 07");
+	}
+	if (isUseDosCommandCls)
 	{
 		cls();
 	}
+
+	return;
+}
+
+void colorclear(HANDLE handle)
+{ // support for old-vision code
+	clearcolor(handle, false, false);
 
 	return;
 }
