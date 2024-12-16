@@ -4,6 +4,8 @@
 #include <conio.h>
 #include <time.h>
 // #include "../head/public_header.hpp"
+#define ffg \
+    fill.flag();
 #define Nor         \
     if (B[b].x < 5) \
         B[b].x = 5;
