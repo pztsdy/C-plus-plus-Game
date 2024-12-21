@@ -9,6 +9,7 @@
 #include <winnt.h>
 #include <ios>
 #include <fstream>
+#include <shellapi.h>
 
 /*
 
@@ -27,6 +28,12 @@
 #define BG_GREEN 32
 #define BG_BLUE 16
 #define BG_LIGHT 128
+
+#ifndef __PUBLIC_HEADER
+#define __PUBLIC_HEADER
+#define _Master git
+#define _Owner Piaoz
+#endif
 
 #ifdef _WINDOWS_
 #include <_mingw.h>
@@ -84,3 +91,4 @@ void colorclear(HANDLE handle)
 
 	return;
 }
+
