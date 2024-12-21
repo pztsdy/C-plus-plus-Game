@@ -1,3 +1,4 @@
+#include <bits/stdc++.h>
 #include <iostream>
 #include <algorithm>
 #include <cmath>
@@ -18,6 +19,16 @@
 
 	SetConsoleTextAttribute(handle, BG_RED | ...);
 */
+/*
+	POINT mouse;
+	srand(time(0));
+	GetCursorPos(&mouse);
+	mouse.x=rand()%1920; 
+	mouse.y=rand()%1080;  
+	// printf("%d %d\n",mouse.x,mouse.y);
+	SetCursorPos(mouse.x,mouse.y);
+	Sleep(2000); 
+*/
 
 #define THE_MAX 21000000
 #define TEXT_RED 4
@@ -28,6 +39,7 @@
 #define BG_GREEN 32
 #define BG_BLUE 16
 #define BG_LIGHT 128
+#define SetTexyColor SetConsoleTextAttribute
 
 #ifndef __PUBLIC_HEADER
 #define __PUBLIC_HEADER
@@ -92,3 +104,13 @@ void colorclear(HANDLE handle)
 	return;
 }
 
+void MouseMaster(POINT mouse, int x, int y){
+	srand(time(0));
+	GetCursorPos(&mouse);
+	mouse.x=x;
+	mouse.y=y;
+	// printf("%d %d\n",mouse.x,mouse.y);
+	SetCursorPos(mouse.x,mouse.y);
+
+	return ;
+}
